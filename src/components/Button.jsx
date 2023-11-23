@@ -1,7 +1,7 @@
 import React from "react";
 
-function Button() {
-    return <input type="submit" value="DATABASE" />;
+function Button(props) {
+    return <input type={props.type} value={props.value} />;
 }
 
 export default Button

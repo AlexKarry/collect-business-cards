@@ -37,15 +37,14 @@ function Form() {
             name="email"
             placeholder="Your email.."
           />
-
-          <input type="submit" value="Submit" />
-          <input type="reset" value="Clear" />
+          
+          <Button type="submit" value="Submit" />
+          <Button type="reset" value="Clear" />
         </form>
         <p id="msg" className="msg"></p>
         <div className="db">
           <a href="/~ak6914/try/web_display.py" aria-label="link to db">
-            {/* <input type="submit" value="DATABASE" /> */}
-            <Button />
+            <Button type="submit" value="DATABASE" />
           </a>
         </div>
       </div>

@@ -60,7 +60,7 @@ input[type="text"] {
   resize: vertical;
 }
 
-input[type="submit"] {
+/* input[type="submit"] {
   background-color: rgb(55, 55, 255);
   color: white;
   padding: 12px 20px;
@@ -72,9 +72,9 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
   background-color: rgb(45, 45, 211);
-}
+} */
 
-input[type="reset"] {
+/* input[type="reset"] {
   background-color: rgb(255, 255, 255);
   color: rgb(192, 192, 192);
   padding: 12px 20px;
@@ -86,7 +86,7 @@ input[type="reset"] {
 
 input[type="reset"]:hover {
   background-color: rgb(252, 252, 252);
-}
+} */
 
 .msg {
   color: red;

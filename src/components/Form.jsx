@@ -1,6 +1,7 @@
 import React from "react";
 import Greeting from "./Greeting";
-import Button from "./Button";
+import FormInputs from "./FormInputs";
+import { SubmitButton, ResetButton, DatabaseButton } from "./ButtonStyles";
 
 function Form() {
   return (
@@ -8,43 +9,14 @@ function Form() {
       <Greeting />
       <div id="container" className="container">
         <form name="Form1" method="POST" action="/~ak6914/try/web_collect.py">
-          <label className="fnameLabel" htmlFor="fname">
-            First Name
-          </label>
-          <input
-            type="text"
-            className="fname"
-            name="fname"
-            placeholder="Your name.."
-          />
-
-          <label className="lnameLabel" htmlFor="lname">
-            Last Name
-          </label>
-          <input
-            type="text"
-            className="lname"
-            name="lname"
-            placeholder="Your last name.."
-          />
-
-          <label className="emailLabel" htmlFor="email">
-            Email
-          </label>
-          <input
-            type="text"
-            className="email"
-            name="email"
-            placeholder="Your email.."
-          />
-          
-          <Button type="submit" value="Submit" />
-          <Button type="reset" value="Clear" />
+          <FormInputs />
+          <SubmitButton type="submit">Submit</SubmitButton>
+          <ResetButton type="reset">Clear</ResetButton>
         </form>
         <p id="msg" className="msg"></p>
         <div className="db">
           <a href="/~ak6914/try/web_display.py" aria-label="link to db">
-            <Button type="submit" value="DATABASE" />
+            <DatabaseButton type="submit">Database</DatabaseButton>
           </a>
         </div>
       </div>

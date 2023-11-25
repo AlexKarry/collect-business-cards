@@ -1,7 +1,9 @@
 import React from "react";
 import Greeting from "./Greeting";
 import FormInputs from "./FormInputs";
-import { SubmitButton, ResetButton, DatabaseButton } from "./ButtonStyles";
+import { BootstrapButton, ButtonContainer } from "./Styles";
+import Button from "@mui/material/Button";
+import SendIcon from "@mui/icons-material/Send";
 
 function Form() {
   return (
@@ -10,13 +12,23 @@ function Form() {
       <div id="container" className="container">
         <form name="Form1" method="POST" action="/~ak6914/try/web_collect.py">
           <FormInputs />
-          <SubmitButton type="submit">Submit</SubmitButton>
-          <ResetButton type="reset">Clear</ResetButton>
+          <ButtonContainer>
+            <Button variant="contained">Contained</Button>
+            <Button variant="contained" href="#contained-buttons">
+              Link
+            </Button>
+          </ButtonContainer>
         </form>
         <p id="msg" className="msg"></p>
         <div className="db">
           <a href="/~ak6914/try/web_display.py" aria-label="link to db">
-            <DatabaseButton type="submit">Database</DatabaseButton>
+            <BootstrapButton
+              variant="contained"
+              type="submit"
+              endIcon={<SendIcon />}
+            >
+              Database
+            </BootstrapButton>
           </a>
         </div>
       </div>

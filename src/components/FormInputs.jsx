@@ -1,8 +1,8 @@
 import React from "react";
+import { Input } from "./Styles"; // Adjust the path if needed
 import { ButtonContainer } from "./Styles";
 import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
-// import { Item } from "./ButtonStyles";
 
 function FormInputs() {
   return (
@@ -13,23 +13,13 @@ function FormInputs() {
             <label className="fnameLabel" htmlFor="fname">
               First Name
             </label>
-            <input
-              type="text"
-              className="fname"
-              name="fname"
-              placeholder="Your name.."
-            />
+            <Input aria-label="Demo input" placeholder="Type something…" />
           </Grid>
           <Grid item xs={8}>
             <label className="lnameLabel" htmlFor="lname">
               Last Name
             </label>
-            <input
-              type="text"
-              className="lname"
-              name="lname"
-              placeholder="Your last name.."
-            />
+            <Input aria-label="Demo input" placeholder="Type something…" />
           </Grid>
         </Grid>
       </Box>

@@ -2,12 +2,23 @@
 import "./App.css";
 import React from "react";
 import Form from "./components/Form";
+import Grid from "@mui/material/Grid";
 
 function App() {
   return (
-    <div>
+    <Grid
+      container
+      justifyContent="center"
+      alignItems="center"
+      style={{
+        minHeight: "100vh",
+        margin: "8px",
+        width: "auto",
+        backgroundColor: "#eeece9",
+      }}
+    >
       <Form />
-    </div>
+    </Grid>
   );
 }
 

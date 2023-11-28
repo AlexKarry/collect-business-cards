@@ -1,69 +1,38 @@
 import React from "react";
-import { Input } from "./Styles"; // Adjust the path if needed
-import { ButtonContainer } from "./Styles";
+import { Input } from "./Styles";
 import Grid from "@mui/material/Grid";
-import Box from "@mui/material/Box";
 
 function FormInputs() {
   return (
-    <>
-      <Box sx={{ flexGrow: 1 }}>
-        <Grid container spacing={2} columns={16}>
-          <Grid item xs={8}>
-            <label className="fnameLabel" htmlFor="fname">
-              First Name
-            </label>
-            <Input aria-label="Demo input" placeholder="Type something…" />
-          </Grid>
-          <Grid item xs={8}>
-            <label className="lnameLabel" htmlFor="lname">
-              Last Name
-            </label>
-            <Input aria-label="Demo input" placeholder="Type something…" />
-          </Grid>
-        </Grid>
-      </Box>
-      <ButtonContainer></ButtonContainer>
-      <label className="companylLabel" htmlFor="email">
-        Company
-      </label>
-      <input
-        type="text"
-        className="companyName"
-        name="email"
-        placeholder="Please Enter Company Name.."
-      />
-
-      <label className="emailLabel" htmlFor="email">
-        Email
-      </label>
-      <input
-        type="text"
-        className="email"
-        name="email"
-        placeholder="Your email.."
-      />
-
-      <label className="phoneLabel" htmlFor="email">
-        Phone Number
-      </label>
-      <input
-        type="text"
-        className="phoneNumber"
-        name="email"
-        placeholder="Phone Number.."
-      />
-
-      <label className="phoneLabel" htmlFor="email">
-        Phone Number
-      </label>
-      <input
-        type="text"
-        className="phoneNumber"
-        name="email"
-        placeholder="Phone Number.."
-      />
-    </>
+    <Grid container spacing={2}>
+      <Grid item xs={6}>
+        <Input aria-label="First Name" placeholder="First Name..." />
+      </Grid>
+      <Grid item xs={6}>
+        <Input aria-label="Last Name" placeholder="Last Name..." />
+      </Grid>
+      <Grid item xs={12}>
+        <Input aria-label="Company" placeholder="Company..." />
+      </Grid>
+      <Grid item xs={12}>
+        <Input aria-label="Company" placeholder="Occupation..." />
+      </Grid>
+      <Grid item xs={12}>
+        <Input aria-label="Address Line 1" placeholder="Address Line 1..." />
+      </Grid>
+      <Grid item xs={12}>
+        <Input aria-label="Address Line 2" placeholder="Address Line 2..." />
+      </Grid>
+      <Grid item xs={6}>
+        <Input aria-label="City" placeholder="City..." />
+      </Grid>
+      <Grid item xs={6}>
+        <Input aria-label="State" placeholder="State..." />
+      </Grid>
+      <Grid item xs={6}>
+        <Input aria-label="Zip Code" placeholder="Zip Code..." />
+      </Grid>
+    </Grid>
   );
 }
 

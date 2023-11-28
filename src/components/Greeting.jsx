@@ -12,13 +12,13 @@ function Greeting() {
 
   if (currentTime < 12) {
     greeting = "Good Morning";
-    customStyle.color = "red";
+    customStyle.color = "lightgray";
   } else if (currentTime < 18) {
     greeting = "Good Afternoon";
-    customStyle.color = "green";
+    customStyle.color = "gray";
   } else {
     greeting = "Good Night";
-    customStyle.color = "darkblue";
+    customStyle.color = "darkgray";
   }
 
   return (

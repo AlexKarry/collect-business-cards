@@ -1,38 +1,40 @@
 import React from "react";
 import Greeting from "./Greeting";
 import FormInputs from "./FormInputs";
-import { BootstrapButton, ButtonContainer } from "./Styles";
-import Button from "@mui/material/Button";
-import SendIcon from "@mui/icons-material/Send";
+import ButtonForm from "./ButtonForm";
+import { Button } from "@mui/material";
+import Grid from "@mui/material/Grid";
 
 function Form() {
   return (
-    <div id="contact" className="contact">
+    <Grid item xs={12} sm={8} md={4}>
       <Greeting />
-      <div id="container" className="container">
-        <form name="Form1" method="POST" action="/~ak6914/try/web_collect.py">
-          <FormInputs />
-          <ButtonContainer>
-            <Button variant="contained">Contained</Button>
-            <Button variant="contained" href="#contained-buttons">
-              Link
-            </Button>
-          </ButtonContainer>
-        </form>
-        <p id="msg" className="msg"></p>
-        <div className="db">
-          <a href="/~ak6914/try/web_display.py" aria-label="link to db">
-            <BootstrapButton
-              variant="contained"
-              type="submit"
-              endIcon={<SendIcon />}
-            >
-              Database
-            </BootstrapButton>
-          </a>
-        </div>
-      </div>
-    </div>
+      <form
+        name="Form1"
+        method="POST"
+        action="/~ak6914/try/web_collect.py"
+        style={{ padding: "20px", backgroundColor: "#e5e7e9" }}
+      >
+        <FormInputs />
+        <p>message</p>
+        <Grid>
+          <ButtonForm />
+        </Grid>
+      </form>
+      <Grid container spacing={2} style={{ padding: "20px" }}>
+        <Grid item xs={12}>
+          <Grid container spacing={2}>
+            <Grid item xs={12} sm={6}>
+              <a href="/~ak6914/try/web_display.py" aria-label="link to db">
+                <Button size="large" variant="contained" fullWidth>
+                  DataBase
+                </Button>
+              </a>
+            </Grid>
+          </Grid>
+        </Grid>
+      </Grid>
+    </Grid>
   );
 }
 

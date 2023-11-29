@@ -24,26 +24,10 @@ body {
   padding: 0;
 }
 
-.contact {
-  background-color: #e5ea45;
-  position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  margin: 8px;
-  width: auto;
+form {
+  border: 1px solid #e3e3e3;
+  border-radius: 4px;
 }
-
-/* .contact .container {
-  background-color: #ececee;
-  padding: 40px 20px;
-  width: 50%;
-  margin: 0 auto;
-  position: relative;
-  top: 50px;
-  border-radius: 10px;
-} */
 
 .textBox.container {
   background-color: #f2f2f2;

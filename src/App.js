@@ -14,7 +14,7 @@ function App() {
         minHeight: "100vh",
         margin: "8px",
         width: "auto",
-        backgroundColor: "#eeece9",
+        backgroundColor: "rgb(252 252 252)",
       }}
     >
       <Form />

@@ -13,7 +13,7 @@ function Form() {
         name="Form1"
         method="POST"
         action="/~ak6914/try/web_collect.py"
-        style={{ padding: "20px", backgroundColor: "#e5e7e9" }}
+        style={{ padding: "20px", backgroundColor: "#fff" }}
       >
         <FormInputs />
         <p>message</p>

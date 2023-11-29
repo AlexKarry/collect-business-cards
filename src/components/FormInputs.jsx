@@ -1,6 +1,12 @@
 import React from "react";
 import { Input } from "./Styles";
-import Grid from "@mui/material/Grid";
+import { Grid } from "@mui/material";
+import MultipleSelect from "./MultipleSelect";
+// import { FormControl } from "@mui/material";
+// import { InputLabel } from "@mui/material";
+// import { Select } from "@mui/material";
+// import { MenuItem } from "@mui/material";
+// import UnstyledSelectIntroduction from "./Test"
 
 function FormInputs() {
   return (
@@ -27,7 +33,17 @@ function FormInputs() {
         <Input aria-label="City" placeholder="City..." />
       </Grid>
       <Grid item xs={6}>
-        <Input aria-label="State" placeholder="State..." />
+        {/* <UnstyledSelectIntroduction /> */}
+
+        {/* <FormControl fullWidth size="medium">
+          <InputLabel id="states-label">States...</InputLabel>
+          <Select labelId="states-label" label="States...">
+            <MenuItem value="state1">State 1</MenuItem>
+            <MenuItem value="state2">State 2</MenuItem>
+            <MenuItem value="state3">State 3</MenuItem>
+          </Select>
+        </FormControl> */}
+        <MultipleSelect />
       </Grid>
       <Grid item xs={6}>
         <Input aria-label="Zip Code" placeholder="Zip Code..." />
